@@ -1,30 +1,41 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @project.title %>
-</p>
-
-<p>
-  <b>Sub title:</b>
-  <%= @project.sub_title %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @project.description %>
-</p>
-
-<p>
-  <b>Prereqs:</b>
-  <%= @project.prereqs %>
-</p>
-
-<p>
-  <b>Intro video:</b>
-  <%= @project.intro_video %>
-</p>
-
-
+<div id="project">
+	<div id="project-header">
+		<p>
+		  <b>Title:</b>
+		  <%= @project.title %>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+		  <b>Sub title:</b>
+		  <%= @project.sub_title %>
+		</p>
+	</div>
+	<div id="tabs">
+		<div id="intro">
+			<b>Description:</b>
+			<%= @project.description %>
+			<br>
+			<b>Prereqs:</b>
+			<%= @project.prereqs %>
+			<iframe width="853" height="480" src="http://www.youtube.com/embed/LO1tGLdB9-Y" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div id="challenge-area">
+			<div id="challenge-accordion">
+		
+			</div>
+			<div id="challenges-list">
+		
+			</div>
+		</div>
+		<div id="rubric">
+			<div id="rubric-video">
+		
+			</div>
+			<div id="rubric-table">
+		
+			</div>
+		</div>
+	</div>
+</div>
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
