@@ -5,9 +5,29 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
+</head >
 <body>
-<%= yield %>
-
+<div id="wrapper">
+	<div id="top">
+		<div id="logo">
+			<h1 id="super_naches">Super Naches</h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>About</li>
+				<li>Game Design</li>
+				<li>Web Design</li>
+				<li>Java</li>
+				<li>Flash</li>
+			</ul>	
+		</div>
+	</div>
+	<div id="main">
+		<%= yield %>
+	</div>
+	<div id="footer">
+		&copy; cam
+	</div>
+</div>
 </body>
 </html>

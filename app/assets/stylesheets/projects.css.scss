@@ -4,6 +4,112 @@
 
 
 
-	table {
-		background-color:blue;
+@import "variables";
+
+#project {
+	color:$warm;
+	margin: 0;
+	#notice {
+		margin: 0;
 	}
+	#project-header {
+		background-color: white;
+		margin: 0;
+		height: 90px;
+		padding: 1px;
+		border-radius: 5px;
+		#project-title{
+			float: left;
+			
+			h1 {
+				color: #333333;
+				margin-left: 10px;
+				margin-bottom: 0;
+			}
+			h3 {
+				color: $cool;
+				margin: 0;
+				margin-left: 20px;
+				font-size: .8em;
+			}
+		}
+		
+		#project-menu {
+			float: right;
+			background-color:$cool;
+			margin: 26px 50px 0 0;
+			padding: 3px;
+			border-radius: 10px;
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				li {
+					float: left;
+					margin: 0 5px;
+					padding: 2px 5px;
+					color: white;
+					background-color: $warm-dull;
+					border-radius: 8px;
+
+				}
+			}
+		}
+	}
+	
+	#intro {
+		background-color: white;
+		margin: 0;
+		margin-top: 4px;
+		padding: 1px;
+		border-radius: 5px;
+		
+		h2 {
+			color: #333;
+			margin-left: 20px;
+			margin-bottom: 0px;
+		}
+		h4 {
+			color: #333;
+			margin-left: 20px;
+			margin-bottom: 0px;
+		}
+		p {
+			color: #555;
+			margin: 0;
+			margin-left: 20px;
+		}
+		#intro-video{
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+	
+	#challenge-area {
+		background-color: white;
+		margin: 0;
+		margin-top: 4px;
+		padding: 1px;
+		border-radius: 5px;
+		
+		#challenge-accordion {
+			.video {
+				
+			}
+		}
+		
+		#challenge-list {
+			
+		}
+	}
+	
+	#rubric {
+		background-color: white;
+		margin: 0;
+		margin-top: 4px;
+		height: 80px;
+		padding: 1px;
+		border-radius: 5px;
+	}
+}
